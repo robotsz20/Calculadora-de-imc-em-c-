@@ -1,0 +1,33 @@
+
+#include <iostream>
+using namespace std;
+int main() {
+    float peso, altura, imc;
+cout<<"Calculadora de indice de massa corporal.\n\n";
+cout<<"Digite a sua altura (ex:1.70): ";
+cin>>altura;
+cout<<"Digite quantos kilos você pesa: ";
+cin>>peso;
+imc=peso/(altura*altura);
+
+    if (imc<=18.5){
+    cout<<"\nVocê está bem magro, isso e preocupante...";
+}
+
+    else if(imc>=18.6&&imc<=25){
+    cout<<"\nVocê está no peso ideal, muito bem!";
+}
+
+    else if(imc>25&&imc<=30){
+    cout<<"\nVocê está com acima do peso, é melhor dar uma corridinha.";
+}
+
+    else if(imc>30){
+    cout<<"\nVocê está bem gordinho, isso é preocupante...";
+
+}
+
+cout<<"\nSeu indice de massa corporal é: "<<imc;
+
+    return 0;
+}
